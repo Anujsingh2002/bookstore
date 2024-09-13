@@ -12,7 +12,7 @@ const ShowBook = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://bookstore-backend-xszd.onrender.com/books/${id}`)        //updated1
       .then((response) => {
         setBook(response.data);
         setLoading(false);
